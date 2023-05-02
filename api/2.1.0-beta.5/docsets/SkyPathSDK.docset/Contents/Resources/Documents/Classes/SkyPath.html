@@ -39,6 +39,9 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Classes/H3.html">H3</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/Logger.html">Logger</a>
               </li>
               <li class="nav-group-task">
@@ -992,9 +995,9 @@ Should not be <code>nil</code>. When it is not set the turbulence data will not 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10SkyPathSDK0aB0C11startFlightyyAA0E0VF"></a>
-                    <a name="//apple_ref/swift/Method/startFlight(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10SkyPathSDK0aB0C11startFlightyyAA0E0VF">startFlight(_:<wbr>)</a>
+                    <a name="/s:10SkyPathSDK0aB0C9setFlightyyAA0E0VSgF"></a>
+                    <a name="//apple_ref/swift/Method/setFlight(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB0C9setFlightyyAA0E0VSgF">setFlight(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1002,7 +1005,7 @@ Should not be <code>nil</code>. When it is not set the turbulence data will not 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Starts a new flight. Flight is saved even across app launches, so <code>startFlight</code> can be called only on a new flight start, and <code>stopFlight</code> can be called when a flight is ended/removed. Flight is required for recording data, but getting turbulence data and other data is available without a started flight.
+                        <p>Update the current flight details. Flight is saved even across app launches. Call it when a flight is set or updated, or removed in the app. Recoding data requires a flight when getting turbulence data, and other data is available without a flight.
 Usage example:</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">flight</span> <span class="o">=</span> <span class="kt">Flight</span><span class="p">(</span><span class="nv">dep</span><span class="p">:</span> <span class="s">"ICAO"</span><span class="p">,</span> <span class="nv">dest</span><span class="p">:</span> <span class="s">"ICAO"</span><span class="p">,</span> <span class="nv">fnum</span><span class="p">:</span> <span class="s">"FLIGHT_NUMBER"</span><span class="p">)</span>
 <span class="kt">SkyPath</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">startFlight</span><span class="p">(</span><span class="n">flight</span><span class="p">)</span>
@@ -1016,7 +1019,7 @@ Usage example:</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startFlight</span><span class="p">(</span><span class="n">_</span> <span class="nv">flight</span><span class="p">:</span> <span class="kt"><a href="../Structs/Flight.html">Flight</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setFlight</span><span class="p">(</span><span class="n">_</span> <span class="nv">flight</span><span class="p">:</span> <span class="kt"><a href="../Structs/Flight.html">Flight</a></span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -1045,33 +1048,6 @@ Usage example:</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10SkyPathSDK0aB0C9endFlightyyF"></a>
-                    <a name="//apple_ref/swift/Method/endFlight()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10SkyPathSDK0aB0C9endFlightyyF">endFlight()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Stops the current flight if any was started by <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C11startFlightyyAA0E0VF">startFlight(_:)</a></code> or <code>setFlight(_:)</code>. Flight is saved even across app launches, so <code>startFlight</code> can be called only on a new flight start, and <code>stopFlight</code> can be called when a flight is ended/removed. To stop tracking data, typically when a flight is ended, remove the flight.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">endFlight</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:10SkyPathSDK0aB0C6flightAA6FlightVSgvp"></a>
                     <a name="//apple_ref/swift/Property/flight" class="dashAnchor"></a>
                     <a class="token" href="#/s:10SkyPathSDK0aB0C6flightAA6FlightVSgvp">flight</a>
@@ -1082,7 +1058,7 @@ Usage example:</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Current flight if any set by <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C11startFlightyyAA0E0VF">startFlight(_:)</a></code>.</p>
+                        <p>Current flight if any set by <code>startFlight(_:)</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1586,7 +1562,7 @@ You can use your flight simulation as well.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2023-04-24)</p>
+          <p>&copy; 2023 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2023-05-02)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
