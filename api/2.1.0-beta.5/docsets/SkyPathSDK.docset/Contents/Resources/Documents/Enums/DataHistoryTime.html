@@ -39,9 +39,6 @@
             <a href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Classes/H3.html">H3</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/Logger.html">Logger</a>
               </li>
               <li class="nav-group-task">
@@ -356,7 +353,7 @@ The server does some data precalculations so only the specified time frames are 
                         <p>Only predefined values are supported. When there is no such case for provided minutes value, the default <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTimeO8twoHoursyA2CmF">twoHours</a></code> will be used.</p>
 
 <p>It&rsquo;s a convenient initializer to create an enum case from minutes value.
-The <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTimeO4minsSivp">mins</a></code> should strictly match one of the cases&rsquo; <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTimeO4minsSivp">mins</a></code> property, otherwise <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTimeO8twoHoursyA2CmF">twoHours</a></code> will be used. This can lead to a mismatch between what you show to the pilot and what is used to fetch/query data. So do not use it with any custom minutes value. Use it only with <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTimeO4minsSivp">DataHistoryTime.mins</a></code> if you ever need it.</p>
+The <code>mins</code> should strictly match one of the cases&rsquo; <code>mins</code> property, otherwise <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTimeO8twoHoursyA2CmF">twoHours</a></code> will be used. This can lead to a mismatch between what you show to the pilot and what is used to fetch/query data. So do not use it with any custom minutes value. Use it only with <code>DataHistoryTime.mins</code> if you ever need it.</p>
 
                       </div>
                       <div class="declaration">
@@ -379,7 +376,7 @@ The <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTim
                               </td>
                               <td>
                                 <div>
-                                  <p>Should match <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTimeO4minsSivp">DataHistoryTime.mins</a></code> of one of the cases. If no case with a such number of mins <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTimeO8twoHoursyA2CmF">twoHours</a></code> will be used.</p>
+                                  <p>Should match <code>DataHistoryTime.mins</code> of one of the cases. If no case with a such number of mins <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTimeO8twoHoursyA2CmF">twoHours</a></code> will be used.</p>
                                 </div>
                               </td>
                             </tr>
@@ -389,66 +386,12 @@ The <code><a href="../Enums/DataHistoryTime.html#/s:10SkyPathSDK15DataHistoryTim
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10SkyPathSDK15DataHistoryTimeO4minsSivp"></a>
-                    <a name="//apple_ref/swift/Property/mins" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10SkyPathSDK15DataHistoryTimeO4minsSivp">mins</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This case time in minutes.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mins</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10SkyPathSDK15DataHistoryTimeO5titleSSvp"></a>
-                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10SkyPathSDK15DataHistoryTimeO5titleSSvp">title</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>The following titles are used for corresponding cases: 1/2h, 1h, 2h, 4h, 6h.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2023 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2023-05-02)</p>
+          <p>&copy; 2023 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2023-05-03)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
