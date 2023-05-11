@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DataQuery Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/DataQuery" class="dashAnchor"></a>
+    <a title="DataQuery Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SkyPathSDK 2.1.1 Docs</a> (98% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SkyPathSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        DataQuery Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SPLocalNotificationManager.html">SPLocalNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SkyPath.html">SkyPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceCluster.html">TurbulenceCluster</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer.html">TurbulenceClusterer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer/Options.html">– Options</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AircraftSize.html">AircraftSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertError.html">AlertError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertResultType.html">AlertResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataAreaType.html">DataAreaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataHistoryTime.html">DataHistoryTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataUpdateFrequency.html">DataUpdateFrequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GeneralError.html">GeneralError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LoggingLevel.html">LoggingLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/QueryError.html">QueryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SPLocationSource.html">SPLocationSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SPLocationState.html">SPLocationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StartError.html">StartError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceResultType.html">TurbulenceResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceTrend.html">TurbulenceTrend</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10SkyPathSDK7SPErrorP">SPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SkyPathDelegate.html">SkyPathDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Aircraft.html">Aircraft</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertQuery.html">AlertQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertResult.html">AlertResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataQuery.html">DataQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataTypeOptions.html">DataTypeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Flight.html">Flight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SPLocation.html">SPLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tile.html">Tile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceItem.html">TurbulenceItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResult.html">TurbulencePolygonsResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResultOptions.html">TurbulencePolygonsResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceQuery.html">TurbulenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResult.html">TurbulenceResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResultOptions.html">TurbulenceResultOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DataQuery</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataQuery</span></code></pre>
+
+                </div>
+              </div>
+            <p>At first request, the whole data according to <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C9dataQueryAA04DataE0Vvp">SkyPath.dataQuery</a></code> is fetched and then only the new data that appeared (delta) is fetched to save network traffic. When cached data expires or a delta can&rsquo;t be received, the whole fresh data will be received again.</p>
+
+<p>There are thousands of turbulence reports around the globe. To reduce network traffic usage and keep only data that is currently needed the data fetch is separated into the different types controlled by the <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C9dataQueryAA04DataE0Vvp">SkyPath.dataQuery</a></code> object that is set initially to default values and can be updated at any time. All of the below are optional to set but recommended due to your specific flow.</p>
+
+<p>After updating <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C9dataQueryAA04DataE0Vvp">SkyPath.dataQuery</a></code> in any way, the check, if need to fetch new data, will be made. And if the change requires a new server fetch, the server request will be made immediately. No need to call <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C9fetchData7refreshySb_tF">SkyPath.fetchData(refresh:)</a></code>.</p>
+
+<p>You can update data query at any time and in both ways by setting a property only or a whole object.</p>
+<pre class="highlight swift"><code><span class="kt">SkyPath</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">dataQuery</span><span class="o">.</span><span class="n">polygon</span> <span class="o">=</span> <span class="n">polygon</span>
+<span class="kt">SkyPath</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">dataQuery</span> <span class="o">=</span> <span class="kt">DataQuery</span><span class="p">(</span><span class="nv">polygon</span><span class="p">:</span> <span class="n">polygon</span><span class="p">)</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK9DataQueryV5typesAA0D11TypeOptionsVvp"></a>
+                    <a name="//apple_ref/swift/Property/types" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK9DataQueryV5typesAA0D11TypeOptionsVvp">types</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set it if you need more than just <code>turbulence</code> data. By default, it&rsquo;s <code>turbulence</code> only, and only turbulence data is fetched from the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">types</span><span class="p">:</span> <span class="kt"><a href="../Structs/DataTypeOptions.html">DataTypeOptions</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK9DataQueryV4sevsSayAA18TurbulenceSeverityOGvp"></a>
+                    <a name="//apple_ref/swift/Property/sevs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK9DataQueryV4sevsSayAA18TurbulenceSeverityOGvp">sevs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>By default, all severities of turbulence will be fetched. But you can provide a list of severities to fetch from the server if don&rsquo;t need other at all.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sevs</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK9DataQueryV7polygonSaySo22CLLocationCoordinate2DVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/polygon" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK9DataQueryV7polygonSaySo22CLLocationCoordinate2DVGSgvp">polygon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Polygon is a geo-fence area to fetch data inside only. Should be a closed ring and have max 250 coordinates, otherwise <code>SkyPath.didFailToFetchNewData</code> will be called with an error. Simplify the polygon with enough tolerance.</p>
+
+<p>The route corridor is a good example. Route line coordinates can be used to create a polygon that includes the route with a width distance. It is fetched separately from other data types and as fast as possible, and also stored offline.
+ It is not recommended to set a worldwide polygon, use global turbulence polygons for it instead. Stored on disk, accessible offline.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">polygon</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK9DataQueryV8viewportSaySo22CLLocationCoordinate2DVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/viewport" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK9DataQueryV8viewportSaySo22CLLocationCoordinate2DVGSgvp">viewport</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A viewport is a polygon of a visible map area in the app to fetch the right data when it&rsquo;s needed. Should be a closed ring and have max 250 coordinates, otherwise <code>SkyPath.didFailToFetchNewData</code> will be called with an error. Simplify the polygon with enough tolerance.</p>
+
+<p>Please keep in mind, that the SDK will try to fetch the data for the viewport as soon as possible after updating <code>SkyPath.shared.dataQuery.viewport</code>. So to save network traffic consider updating <code>viewport</code> when it&rsquo;s needed.
+A good place could be when the pilot moved the map manually, released the finger and the map stopped moving after animation, or when the focused map area is moved by code far from the previously focused area. Stored in memory, accessible offline until app relaunch.
+The previous viewport data is replaced with new viewport data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">viewport</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK9DataQueryV13globalEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/globalEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK9DataQueryV13globalEnabledSbvp">globalEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If <code>true</code> turbulence polygons will be fetched worldwide, otherwise, if <code><a href="../Structs/DataQuery.html#/s:10SkyPathSDK9DataQueryV7polygonSaySo22CLLocationCoordinate2DVGSgvp">polygon</a></code> is set - only inside the polygon. Also if enabled the limited number of <code>traffic</code> and <code>pireps</code> worldwide data will be fetched as well if enabled in <code><a href="../Structs/DataQuery.html#/s:10SkyPathSDK9DataQueryV5typesAA0D11TypeOptionsVvp">types</a></code>. The default is <code>true</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">globalEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK9DataQueryV35globalTurbulencePolygonsUpToEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/globalTurbulencePolygonsUpToEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK9DataQueryV35globalTurbulencePolygonsUpToEnabledSbvp">globalTurbulencePolygonsUpToEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A planet-wide aggregated turbulence area polygons as a GeoJSON string. Used to show turbulence areas worldwide without fetching too much data. <code><a href="../Structs/DataQuery.html#/s:10SkyPathSDK9DataQueryV5typesAA0D11TypeOptionsVvp">DataQuery.types</a></code> should have <code>.turbulencePolygons</code> to fetch it. Stored on disk, accessible offline.</p>
+
+<p>Turbulence polygons are generated per time history separately and by default only selected time history is fetched for polygons. To enable fetching polygons for all time histories up to selected set a corresponding flag. For example, if set to fetch 4h, then to have polygons available offline for 0.5h, 1h, 2h, and 4h you need to set this flag to <code>true</code>.
+Default is <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">globalTurbulencePolygonsUpToEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK9DataQueryV5types4sevs7polygonAcA0D11TypeOptionsV_SayAA18TurbulenceSeverityOGSaySo22CLLocationCoordinate2DVGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(types:sevs:polygon:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK9DataQueryV5types4sevs7polygonAcA0D11TypeOptionsV_SayAA18TurbulenceSeverityOGSaySo22CLLocationCoordinate2DVGSgtcfc">init(types:<wbr>sevs:<wbr>polygon:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default initializer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">types</span><span class="p">:</span> <span class="kt"><a href="../Structs/DataTypeOptions.html">DataTypeOptions</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">turbulence</span><span class="p">,</span>
+            <span class="nv">sevs</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a></span><span class="p">]</span> <span class="o">=</span> <span class="kt"><a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a></span><span class="o">.</span><span class="n">allCases</span><span class="p">,</span>
+            <span class="nv">polygon</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2023-05-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
