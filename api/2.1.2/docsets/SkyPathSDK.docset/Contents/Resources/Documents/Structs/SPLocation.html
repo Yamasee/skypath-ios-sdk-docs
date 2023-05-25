@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SPLocation Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/SPLocation" class="dashAnchor"></a>
+    <a title="SPLocation Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SkyPathSDK 2.1.2 Docs</a> (98% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SkyPathSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SPLocation Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SPLocalNotificationManager.html">SPLocalNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SkyPath.html">SkyPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceCluster.html">TurbulenceCluster</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer.html">TurbulenceClusterer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer/Options.html">– Options</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AircraftSize.html">AircraftSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertError.html">AlertError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertResultType.html">AlertResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataAreaType.html">DataAreaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataHistoryTime.html">DataHistoryTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataUpdateFrequency.html">DataUpdateFrequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GeneralError.html">GeneralError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LoggingLevel.html">LoggingLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/QueryError.html">QueryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SPLocationSource.html">SPLocationSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SPLocationState.html">SPLocationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StartError.html">StartError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceResultType.html">TurbulenceResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceTrend.html">TurbulenceTrend</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10SkyPathSDK7SPErrorP">SPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SkyPathDelegate.html">SkyPathDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Aircraft.html">Aircraft</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertQuery.html">AlertQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertResult.html">AlertResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataQuery.html">DataQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataTypeOptions.html">DataTypeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Flight.html">Flight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SPLocation.html">SPLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tile.html">Tile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceItem.html">TurbulenceItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResult.html">TurbulencePolygonsResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResultOptions.html">TurbulencePolygonsResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceQuery.html">TurbulenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResult.html">TurbulenceResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResultOptions.html">TurbulenceResultOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SPLocation</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SPLocation</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>A location object that encapsulates system-provided location and internally calculated values.</p>
+
+<p>While data fetching from the server does not depend much on the location, it is important to have a good location to track turbulence data. Cellular devices have a built-in GPS and can have a stable location without an internet connection, but WiFi-only devices do not and need an internet connection or an external GPS receiver. When a device has poor location data (outdated or invalid) SDK will not track data and show the current position on the map. However, SDK tries to operate with a poor or shaky GPS signal as much as possible. SDK handles all location-related stuff out of the box.</p>
+
+<p><code><a href="../Protocols/SkyPathDelegate.html#/s:10SkyPathSDK0aB8DelegateP22locationManagerDidFail9withErrorys0J0_p_tF">SkyPathDelegate.locationManagerDidFail(withError:)</a></code> could be called when SDK failed to get a location when, for example, a GPS signal is not available, or location usage permission has not been granted for the app.</p>
+
+<p>Low power mode. SDK tracks the best accuracy location when in flight to correctly track turbulence data. When the location is not needed anymore (when landed) and SDK was not stopped (when the app is left in the background or foreground), SDK can stop location tracking and switch to low power mode to save battery. Location tracking will start for the next flight.</p>
+
+<p><code><a href="../Protocols/SkyPathDelegate.html#/s:10SkyPathSDK0aB8DelegateP21didUpdateLowPowerModeyySbF">SkyPathDelegate.didUpdateLowPowerMode(_:)</a></code> notifies that SDK updated the low power mode state. A method is optional. You can use it to notify that location tracking stopped or just do nothing and ignore it.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV8locationSo10CLLocationCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/location" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV8locationSo10CLLocationCSgvp">location</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The system provided a location or an external location if available.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocation</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV5stateAA0D5StateOvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV5stateAA0D5StateOvp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The location state of the currently used location.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Enums/SPLocationState.html">SPLocationState</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV5errors5Error_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/error" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV5errors5Error_pSgvp">error</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The error from the <code>CLLocationManager</code> if any.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV11pressureAltSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/pressureAlt" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV11pressureAltSdSgvp">pressureAlt</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Rounded calculated pressure altitude. If available. Measured in feet.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pressureAlt</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV14pressureAltRawSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/pressureAltRaw" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV14pressureAltRawSdSgvp">pressureAltRaw</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unrounded calculated pressure altitude. If available. Measured in feet.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">pressureAltRaw</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV8altitudeSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/altitude" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV8altitudeSdSgvp">altitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="../Structs/SPLocation.html#/s:10SkyPathSDK10SPLocationV11pressureAltSdSgvp">pressureAlt</a></code> if available otherwise <code>location.altitude</code>. Measured in meters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">altitude</span><span class="p">:</span> <span class="kt">CLLocationDistance</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV15calculatedSpeedSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/calculatedSpeed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV15calculatedSpeedSdSgvp">calculatedSpeed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculated speed based on location coordinates change over time. Measured in meters per second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">calculatedSpeed</span><span class="p">:</span> <span class="kt">CLLocationSpeed</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV13verticalSpeedSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/verticalSpeed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV13verticalSpeedSdSgvp">verticalSpeed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculated vertical speed based on the altitude change over time. Measured in meters per second.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">verticalSpeed</span><span class="p">:</span> <span class="kt">CLLocationSpeed</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV5speedSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/speed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV5speedSdSgvp">speed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>System location instantaneous speed if valid, otherwise <code><a href="../Structs/SPLocation.html#/s:10SkyPathSDK10SPLocationV15calculatedSpeedSdSgvp">calculatedSpeed</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">speed</span><span class="p">:</span> <span class="kt">CLLocationSpeed</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10SPLocationV6sourceAA0D6SourceOvp"></a>
+                    <a name="//apple_ref/swift/Property/source" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10SPLocationV6sourceAA0D6SourceOvp">source</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The source of the currently used location. See <code><a href="../Enums/SPLocationSource.html">SPLocationSource</a></code> for more details.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">source</span><span class="p">:</span> <span class="kt"><a href="../Enums/SPLocationSource.html">SPLocationSource</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2023-05-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

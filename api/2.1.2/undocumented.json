@@ -1,0 +1,33 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/alexkovalov/Dev/skypath-sdk-ios/SkyPathSDK/Model/Aircraft.swift",
+      "line": 14,
+      "symbol": "AircraftSize.small",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alexkovalov/Dev/skypath-sdk-ios/SkyPathSDK/Model/Aircraft.swift",
+      "line": 15,
+      "symbol": "AircraftSize.medium",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alexkovalov/Dev/skypath-sdk-ios/SkyPathSDK/Model/Aircraft.swift",
+      "line": 16,
+      "symbol": "AircraftSize.large",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alexkovalov/Dev/skypath-sdk-ios/SkyPathSDK/Model/Error/GeneralError.swift",
+      "line": 15,
+      "symbol": "GeneralError.internetConnectionAppearsOffline",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/alexkovalov/Dev/skypath-sdk-ios"
+}

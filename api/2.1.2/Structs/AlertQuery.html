@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AlertQuery Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/AlertQuery" class="dashAnchor"></a>
+    <a title="AlertQuery Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SkyPathSDK 2.1.2 Docs</a> (98% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SkyPathSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        AlertQuery Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SPLocalNotificationManager.html">SPLocalNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SkyPath.html">SkyPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceCluster.html">TurbulenceCluster</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer.html">TurbulenceClusterer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer/Options.html">– Options</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AircraftSize.html">AircraftSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertError.html">AlertError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertResultType.html">AlertResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataAreaType.html">DataAreaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataHistoryTime.html">DataHistoryTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataUpdateFrequency.html">DataUpdateFrequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GeneralError.html">GeneralError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LoggingLevel.html">LoggingLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/QueryError.html">QueryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SPLocationSource.html">SPLocationSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SPLocationState.html">SPLocationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StartError.html">StartError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceResultType.html">TurbulenceResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceTrend.html">TurbulenceTrend</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10SkyPathSDK7SPErrorP">SPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SkyPathDelegate.html">SkyPathDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Aircraft.html">Aircraft</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertQuery.html">AlertQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertResult.html">AlertResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataQuery.html">DataQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataTypeOptions.html">DataTypeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Flight.html">Flight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SPLocation.html">SPLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tile.html">Tile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceItem.html">TurbulenceItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResult.html">TurbulencePolygonsResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResultOptions.html">TurbulencePolygonsResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceQuery.html">TurbulenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResult.html">TurbulenceResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResultOptions.html">TurbulenceResultOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AlertQuery</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AlertQuery</span></code></pre>
+
+                </div>
+              </div>
+            <p>Control how to search alerts. By default, it uses the current location and beam mode with default values.
+When passing <code>route</code> the search will be done in coordinates instead.
+By default, the current location altitude will be used to make a range with +/- 2k feet. Set <code>altRange</code> when you need the custom range to search for alerts.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV6minSevAA18TurbulenceSeverityOvp"></a>
+                    <a name="//apple_ref/swift/Property/minSev" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV6minSevAA18TurbulenceSeverityOvp">minSev</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Min severity level of turbulence to alert. The default is <code>light</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minSev</span><span class="p">:</span> <span class="kt"><a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV4sevsSayAA18TurbulenceSeverityOGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sevs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV4sevsSayAA18TurbulenceSeverityOGSgvp">sevs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Severity levels of turbulence. Will use only turbulence with these severities if set. Optional. The default is <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sevs</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV8distanceSdvp"></a>
+                    <a name="//apple_ref/swift/Property/distance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV8distanceSdvp">distance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Distance of &ldquo;beam&rdquo; or <code><a href="../Structs/AlertQuery.html#/s:10SkyPathSDK10AlertQueryV5routeSaySo22CLLocationCoordinate2DVGSgvp">route</a></code> if set. Measured in nautical miles (NM). The default is 100 NM.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">distance</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV9timeFrameSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/timeFrame" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV9timeFrameSdSgvp">timeFrame</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Time frame from now in which search for turbulence. <code><a href="../Structs/AlertQuery.html#/s:10SkyPathSDK10AlertQueryV8distanceSdvp">distance</a></code> will be ignored. Distance will be dynamically calculated from the current speed and this <code>time</code> set. If speed is not currently available, the <code><a href="../Structs/AlertQuery.html#/s:10SkyPathSDK10AlertQueryV8distanceSdvp">distance</a></code> will be used. Measured in seconds. Optional. The default is <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">timeFrame</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV9angleSpanSdvp"></a>
+                    <a name="//apple_ref/swift/Property/angleSpan" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV9angleSpanSdvp">angleSpan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Angle in degrees from velocity vector. The default is 15 degrees.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">angleSpan</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV8altRangeSNySdGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/altRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV8altRangeSNySdGSgvp">altRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Altitude lower and upper bounds of the range. Should be round to a thousand feet. If set, the turbulence will be searched inside this altitude range only despite the current location altitude. Measured in feet.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">altRange</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV31switchToBeamOnDistanceFromRouteSdvp"></a>
+                    <a name="//apple_ref/swift/Property/switchToBeamOnDistanceFromRoute" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV31switchToBeamOnDistanceFromRouteSdvp">switchToBeamOnDistanceFromRoute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the aircraft is far from this value from the nearest coordinate of a route (if set), then switch to beam mode searching alerts. The default is 20 NM. Measured in nautical miles (NM).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">switchToBeamOnDistanceFromRoute</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV18excludeOwnTimeSpanSivp"></a>
+                    <a name="//apple_ref/swift/Property/excludeOwnTimeSpan" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV18excludeOwnTimeSpanSivp">excludeOwnTimeSpan</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Do not alert on your own recorded turbulence for the last time span. Measured in minutes. The default is 60.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">excludeOwnTimeSpan</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV5routeSaySo22CLLocationCoordinate2DVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/route" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV5routeSaySo22CLLocationCoordinate2DVGSgvp">route</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Coordinates of the route line. <code><a href="../Structs/AlertQuery.html#/s:10SkyPathSDK10AlertQueryV11widthAroundSdSgvp">widthAround</a></code> will be used for a route corridor.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">route</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV11widthAroundSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/widthAround" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV11widthAroundSdSgvp">widthAround</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Distance from the route line coordinates to search for alerts. Measured in NM. The default is 20 NM.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">widthAround</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV7polygonSaySo22CLLocationCoordinate2DVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/polygon" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV7polygonSaySo22CLLocationCoordinate2DVGSgvp">polygon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Polygon coordinates to get turbulence alerts inside it only. The last coordinate should be the same as the first to have a closed polygon.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">polygon</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV5tilesSaySSGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tiles" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV5tilesSaySSGSgvp">tiles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of tile keys. Use it to query turbulence in specific tiles.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tiles</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV15dataHistoryTimeAA04DatagH0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/dataHistoryTime" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV15dataHistoryTimeAA04DatagH0OSgvp">dataHistoryTime</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>History time of queried data. When it&rsquo;s <code>nil</code> the <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C15dataHistoryTimeAA04DataeF0Ovp">SkyPath.dataHistoryTime</a></code> value is used. Optional. The default is <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">dataHistoryTime</span><span class="p">:</span> <span class="kt"><a href="../Enums/DataHistoryTime.html">DataHistoryTime</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV18usePolygonsEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/usePolygonsEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV18usePolygonsEnabledSbvp">usePolygonsEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>By default it&rsquo;s <code>false</code> and only route corridor and viewport low-resolution H3 turbulence reports will be queried. But when offline and no low-resolution turbulence reports are cached it could be useful to use high-resolution turbulence polygons to search for alerts instead. In this case, set it to <code>true</code> and the query will return a <code><a href="../Structs/TurbulenceItem.html">TurbulenceItem</a></code> array generated from turbulence polygons cached for the specified area.
+It will use polygons data only if no low-resolution H3 turbulence reports meet the query. A recommendation for when to use it is when the app is offline. Optional. By default, it is <code>false</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">usePolygonsEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV6minSev4sevs8distance9timeFrame9angleSpan8altRange5route11widthAround31switchToBeamOnDistanceFromRoute014excludeOwnTimeM015dataHistoryTimeAcA18TurbulenceSeverityO_SayAPGSgS2dSgSdSNySdGSgSaySo22CLLocationCoordinate2DVGSgASSdSiAA15DataHistoryTimeOSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(minSev:sevs:distance:timeFrame:angleSpan:altRange:route:widthAround:switchToBeamOnDistanceFromRoute:excludeOwnTimeSpan:dataHistoryTime:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV6minSev4sevs8distance9timeFrame9angleSpan8altRange5route11widthAround31switchToBeamOnDistanceFromRoute014excludeOwnTimeM015dataHistoryTimeAcA18TurbulenceSeverityO_SayAPGSgS2dSgSdSNySdGSgSaySo22CLLocationCoordinate2DVGSgASSdSiAA15DataHistoryTimeOSgtcfc">init(minSev:<wbr>sevs:<wbr>distance:<wbr>timeFrame:<wbr>angleSpan:<wbr>altRange:<wbr>route:<wbr>widthAround:<wbr>switchToBeamOnDistanceFromRoute:<wbr>excludeOwnTimeSpan:<wbr>dataHistoryTime:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default initializer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">minSev</span><span class="p">:</span> <span class="kt"><a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">light</span><span class="p">,</span>
+            <span class="nv">sevs</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">distance</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
+            <span class="nv">timeFrame</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">angleSpan</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span>
+            <span class="nv">altRange</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">route</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">widthAround</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span>
+            <span class="nv">switchToBeamOnDistanceFromRoute</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span>
+            <span class="nv">excludeOwnTimeSpan</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">60</span><span class="p">,</span>
+            <span class="nv">dataHistoryTime</span><span class="p">:</span> <span class="kt"><a href="../Enums/DataHistoryTime.html">DataHistoryTime</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2023-05-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
