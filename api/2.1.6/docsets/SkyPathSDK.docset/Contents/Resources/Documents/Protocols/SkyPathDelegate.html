@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SkyPathDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/SkyPathDelegate" class="dashAnchor"></a>
+    <a title="SkyPathDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SkyPathSDK 2.1.6 Docs</a> (98% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SkyPathSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SkyPathDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SPLocalNotificationManager.html">SPLocalNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SkyPath.html">SkyPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceCluster.html">TurbulenceCluster</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer.html">TurbulenceClusterer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer/Options.html">– Options</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AircraftSize.html">AircraftSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertError.html">AlertError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertResultType.html">AlertResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataAreaType.html">DataAreaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataHistoryTime.html">DataHistoryTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataUpdateFrequency.html">DataUpdateFrequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GeneralError.html">GeneralError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LoggingLevel.html">LoggingLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/QueryError.html">QueryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SPLocationSource.html">SPLocationSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SPLocationState.html">SPLocationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StartError.html">StartError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceResultType.html">TurbulenceResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceTrend.html">TurbulenceTrend</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10SkyPathSDK7SPErrorP">SPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SkyPathDelegate.html">SkyPathDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Aircraft.html">Aircraft</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertQuery.html">AlertQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertResult.html">AlertResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataQuery.html">DataQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataTypeOptions.html">DataTypeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Flight.html">Flight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SPLocation.html">SPLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tile.html">Tile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceItem.html">TurbulenceItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResult.html">TurbulencePolygonsResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResultOptions.html">TurbulencePolygonsResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceQuery.html">TurbulenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResult.html">TurbulenceResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResultOptions.html">TurbulenceResultOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SkyPathDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SkyPathDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Delegate methods to receive events from the SDK. All methods will be called on the main thread.</p>
+<pre class="highlight swift"><code><span class="kt">SkyPath</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="n">delegate</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP24didUpdateRecordingStatus2toySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/didUpdateRecordingStatus(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP24didUpdateRecordingStatus2toySb_tF">didUpdateRecordingStatus(to:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called after <code>SkyPath.start()</code> when SDK verified the key with the server and started recording and fetching data. SDK will save the session so not every call of <code>start()</code> will trigger a server request. However, if the session has expired the network connection will be required to refresh the session and be able to receive fresh data from the server. It can also be called when SDK stopped recording due to an error like session invalidated or company/key deactivated etc. If <code>recording=false</code> a <code>SkyPath.start()</code> call is required to start recording again. Required.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didUpdateRecordingStatus</span><span class="p">(</span><span class="n">to</span> <span class="nv">recording</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>recording</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>When successfully started recording the flag will be <code>true</code>. When the API key or session is expired, or any other error it will be called with the flag <code>false</code>. In this case, SDK needs to be started again.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP27didReceiveNewTurbulenceData8areaTypeyAA0i4AreaK0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/didReceiveNewTurbulenceData(areaType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP27didReceiveNewTurbulenceData8areaTypeyAA0i4AreaK0O_tF">didReceiveNewTurbulenceData(areaType:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SDK automatically fetches data periodically when online to keep data as fresh as possible. SDK notifies when new data has been fetched from the server. It does not provide which new data has been received. So to update data on the map you need to make a new query using <code><a href="../Structs/TurbulenceQuery.html">TurbulenceQuery</a></code> to get the data you need. It can also be called once after starting notifying that the locally cached data is ready to use. Required.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didReceiveNewTurbulenceData</span><span class="p">(</span><span class="nv">areaType</span><span class="p">:</span> <span class="kt"><a href="../Enums/DataAreaType.html">DataAreaType</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>areaType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Use it to distinguish area types like route corridor or viewport when needed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP18detectedTurbulenceyyAA0F4ItemVF"></a>
+                    <a name="//apple_ref/swift/Method/detectedTurbulence(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP18detectedTurbulenceyyAA0F4ItemVF">detectedTurbulence(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notifies when a new turbulence event is detected or when a crossed tile is marked as turbulence clean or smooth which means the <code>.none</code> turbulence severity report will be sent for this tile. Some indication for the pilot can be presented or it can be ignored. Optional.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">detectedTurbulence</span><span class="p">(</span><span class="n">_</span> <span class="nv">turbulence</span><span class="p">:</span> <span class="kt"><a href="../Structs/TurbulenceItem.html">TurbulenceItem</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>turbulence</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The generated turbulence report item that will also be sent to the server.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP31didReceiveNewTurbulencePolygonsyyF"></a>
+                    <a name="//apple_ref/swift/Method/didReceiveNewTurbulencePolygons()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP31didReceiveNewTurbulencePolygonsyyF">didReceiveNewTurbulencePolygons()</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When a global turbulence polygons data type is enabled, it will be called when new turbulence polygons data has been received from the server. SDK automatically downloads data periodically. SDK does not provide the received changes so need to make a query by <code><a href="../Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a></code> to get data to show. If <code><a href="../Structs/DataQuery.html#/s:10SkyPathSDK9DataQueryV5typesAA0D11TypeOptionsVvp">DataQuery.types</a></code> does not have <code>turbulencePolygons</code> this will not be called as polygons data will not be available. Optional.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didReceiveNewTurbulencePolygons</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP21didFailToFetchNewData4withyAA7SPError_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/didFailToFetchNewData(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP21didFailToFetchNewData4withyAA7SPError_p_tF">didFailToFetchNewData(with:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SDK failed to get new data. This could be due to no connection, the server not being reachable, or something else. Check <code>error</code> to get more details. Optional.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didFailToFetchNewData</span><span class="p">(</span><span class="n">with</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:10SkyPathSDK7SPErrorP">SPError</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An error object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP15didReceiveAlertyyAA0G6ResultVF"></a>
+                    <a name="//apple_ref/swift/Method/didReceiveAlert(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP15didReceiveAlertyyAA0G6ResultVF">didReceiveAlert(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Turbulence alert is a warning when there are some turbulence reports ahead based on <code><a href="../Structs/AlertQuery.html">AlertQuery</a></code> parameters. By default, SDK does not search for alerts. You can start auto monitoring by calling <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C21startMonitoringAlerts4withyAA10AlertQueryV_tF">SkyPath.startMonitoringAlerts(with:)</a></code> specifying desired parameters in <code><a href="../Structs/AlertQuery.html">AlertQuery</a></code>. It will use default recommended parameters when not set, so it will be a good start. SDK will search for turbulence on every location update and notify this delegate if there is a match.
+It will not be called multiple times if the same reports are found, but it will be called once the situation change - whether a new turbulence is found or any from the previous alert disappeared or is not relevant anymore.
+Due to a lot of reports alerts can be provided frequently. To make pilot notifications more consistent and less frequent you can use <code><a href="../Classes/TurbulenceClusterer.html">TurbulenceClusterer</a></code> to group <code><a href="../Structs/AlertResult.html#/s:10SkyPathSDK11AlertResultV10turbulenceSayAA14TurbulenceItemVGvp">AlertResult.turbulence</a></code> into clusters and notify the pilot about a cluster instead of each <code><a href="../Structs/TurbulenceItem.html">TurbulenceItem</a></code>.
+Optional.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didReceiveAlert</span><span class="p">(</span><span class="n">_</span> <span class="nv">alert</span><span class="p">:</span> <span class="kt"><a href="../Structs/AlertResult.html">AlertResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alert</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The alert consists of all turbulence reports found according to an <code><a href="../Structs/AlertQuery.html">AlertQuery</a></code> at each location update (not a delta since the last report). Use <code><a href="../Classes/TurbulenceClusterer.html">TurbulenceClusterer</a></code> for grouping and better alerting logic.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP22locationManagerDidFail9withErrorys0J0_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/locationManagerDidFail(withError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP22locationManagerDidFail9withErrorys0J0_p_tF">locationManagerDidFail(withError:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>CLLocationManager</code> is used to track location. It can be called in case the app has not been granted permission to use location services or the location is not available (which can happen frequently when in the air). It can also be called in the case when the system failed to provide a location. Optional.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManagerDidFail</span><span class="p">(</span><span class="n">withError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An error object provided by the system <code>CLLocationManager</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP25serverReachabilityUpdated2toySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/serverReachabilityUpdated(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP25serverReachabilityUpdated2toySb_tF">serverReachabilityUpdated(to:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>By default, the SkyPath server domain is used to communicate with the server. You can also set a custom proxy server in <code>SkyPath.start()</code> via <code>env</code> parameter, it will solve the whitelisting issue. This method will be called in case the server domain (default or custom proxy) is not reachable anymore or became reachable. Not reachable could be due to no internet connection or not being whitelisted. Called only on change from reachable to not reachable and vice versa. Optional.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">serverReachabilityUpdated</span><span class="p">(</span><span class="n">to</span> <span class="nv">isReachable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isReachable</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Flag if the server is now reachable or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP23didChangeDevicePosition_10horizontalySb_SbtF"></a>
+                    <a name="//apple_ref/swift/Method/didChangeDevicePosition(_:horizontal:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP23didChangeDevicePosition_10horizontalySb_SbtF">didChangeDevicePosition(_:<wbr>horizontal:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The device sensors are analyzed to determine the turbulence events, so the fixed device position (angle) is required for a correct recording. SDK automatically calibrates the device position and notifies when it is set properly and SDK can track data or not.
+For example, when the device is positioned in the cradle and then moved in hands the <code>inPosition</code> will be false as SDK detects this movement. Later when it will be placed back in the cradle SDK will auto-detect it as well and notify <code>inPosition = true</code>.
+The data will not be tracked while the device is not in position. Also, when the device is horizontal (flat) like laying on the table or near that it is also in the wrong position.
+The application can show a note for the pilot that the device is currently not in position and data is not tracked.
+Required.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didChangeDevicePosition</span><span class="p">(</span><span class="n">_</span> <span class="nv">inPosition</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">horizontal</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inPosition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Is the device currently in a steady position or not. This also can be checked via <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C10inPositionSbvp">SkyPath.inPosition</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>horizontal</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Turbulence is not tracked also when the device is horizontal. This also can be checked via <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C12isHorizontalSbvp">SkyPath.isHorizontal</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP21didUpdateLowPowerModeyySbF"></a>
+                    <a name="//apple_ref/swift/Method/didUpdateLowPowerMode(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP21didUpdateLowPowerModeyySbF">didUpdateLowPowerMode(_:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When the flight is started by <code>SkyPath.startFlight(_:)</code> the high accuracy location tracking is enabled in both background and foreground. The high accuracy is also used when no flight started and the app is foreground, but not when in the background. When no need for a location like when the app is in the background without a flight on the ground or when landed, the SDK will stop tracking location and notify that it switched to &ldquo;low power mode&rdquo; which means no location and sensor data tracking to save battery. When a new flight is started SDK will go out of low power mode. Optional.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didUpdateLowPowerMode</span><span class="p">(</span><span class="n">_</span> <span class="nv">lowPowerMode</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lowPowerMode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Is low power mode enabled or not. When <code>true</code> no sensor data and location will be tracked. SDK will stand for starting a new flight.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK0aB8DelegateP23didUpdateFetchingStatus2to8areaTypeySb_AA08DataAreaK0OtF"></a>
+                    <a name="//apple_ref/swift/Method/didUpdateFetchingStatus(to:areaType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK0aB8DelegateP23didUpdateFetchingStatus2to8areaTypeySb_AA08DataAreaK0OtF">didUpdateFetchingStatus(to:<wbr>areaType:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Data is auto-fetched periodically from the server. The period can be configured by <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C19dataUpdateFrequencyAA04DataeF0Ovp">SkyPath.dataUpdateFrequency</a></code>. You can use this method to show an indicator that SkyPath is loading data or not. Called only on change. Optional.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didUpdateFetchingStatus</span><span class="p">(</span><span class="n">to</span> <span class="nv">fetching</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">areaType</span><span class="p">:</span> <span class="kt"><a href="../Enums/DataAreaType.html">DataAreaType</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fetching</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>It will be <code>true</code> when a new fetching server request started. It will be <code>false</code> when the corresponding request is completed and received data or there was an error.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>areaType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The data fetching is broken down into different area types. Each type is fetched via a separate fetching server request. See <code><a href="../Enums/DataAreaType.html">DataAreaType</a></code> for more details.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2024-01-02)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
