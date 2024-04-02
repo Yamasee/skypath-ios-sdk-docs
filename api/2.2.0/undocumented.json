@@ -1,0 +1,26 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/alexkovalov/Dev/skypath-sdk-ios/SkyPathSDK/Managers/DataHexagoner/DataHexagonerQuery.swift",
+      "line": 42,
+      "symbol": "DataHexagonerQuery.fullHex",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alexkovalov/Dev/skypath-sdk-ios/SkyPathSDK/Managers/DataHexagoner/DataHexagonerQuery.swift",
+      "line": 46,
+      "symbol": "DataHexagonerQuery.byAlt",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/alexkovalov/Dev/skypath-sdk-ios/SkyPathSDK/Managers/DataHexagoner/DataHexagonerQuery.swift",
+      "line": 50,
+      "symbol": "DataHexagonerQuery.byHour",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/alexkovalov/Dev/skypath-sdk-ios"
+}
