@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Array Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Array" class="dashAnchor"></a>
+    <a title="Array Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SkyPathSDK 2.2.0 Docs</a> (99% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SkyPathSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        Array Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SPLocalNotificationManager.html">SPLocalNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SkyPath.html">SkyPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceCluster.html">TurbulenceCluster</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer.html">TurbulenceClusterer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer/Options.html">– Options</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AircraftSize.html">AircraftSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertError.html">AlertError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertResultType.html">AlertResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataAreaType.html">DataAreaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataHistoryTime.html">DataHistoryTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataUpdateFrequency.html">DataUpdateFrequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GeneralError.html">GeneralError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LoggingLevel.html">LoggingLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NowcastHours.html">NowcastHours</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NowcastSeverity.html">NowcastSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/QueryError.html">QueryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StartError.html">StartError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceResultType.html">TurbulenceResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceTrend.html">TurbulenceTrend</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10SkyPathSDK7SPErrorP">SPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SkyPathDelegate.html">SkyPathDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Aircraft.html">Aircraft</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertQuery.html">AlertQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertResult.html">AlertResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataQuery.html">DataQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataTypeOptions.html">DataTypeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Flight.html">Flight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/InjectedLocation.html">InjectedLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/InjectedLocation/Altitude.html">– Altitude</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LiveFlight.html">LiveFlight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LiveFlightQuery.html">LiveFlightQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LiveFlightResult.html">LiveFlightResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LiveFlightResultOptions.html">LiveFlightResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NowcastItem.html">NowcastItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NowcastQuery.html">NowcastQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NowcastResult.html">NowcastResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NowcastResultOptions.html">NowcastResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tile.html">Tile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceItem.html">TurbulenceItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResult.html">TurbulencePolygonsResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResultOptions.html">TurbulencePolygonsResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceQuery.html">TurbulenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResult.html">TurbulenceResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResultOptions.html">TurbulenceResultOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Array</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span> <span class="o">==</span> <span class="kt">CLLocationCoordinate2D</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span> <span class="o">==</span> <span class="kt"><a href="../Structs/LiveFlight.html">LiveFlight</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span> <span class="o">==</span> <span class="kt"><a href="../Structs/NowcastItem.html">NowcastItem</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">Array</span> <span class="k">where</span> <span class="kt">Element</span> <span class="o">==</span> <span class="kt"><a href="../Structs/TurbulenceItem.html">TurbulenceItem</a></span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%20%3D%3D%20%60CLLocationCoordinate2D%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element` == `CLLocationCoordinate2D`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%20%3D%3D%20%60CLLocationCoordinate2D%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Element</code> == <code>CLLocationCoordinate2D</code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE8geodesicSayACGvp"></a>
+                    <a name="//apple_ref/swift/Property/geodesic" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE8geodesicSayACGvp">geodesic</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates a geodesic polyline coordinates using <code>MapKit.MKGeodesicPolyline</code>.</p>
+
+<p>When a line crosses Antimerdian it will have longitude from both sides, like +179° and -179°.
+This leads to a drawing over the whole globe.</p>
+
+<p>The result coordinates will be normalized into [-360°,0°] or [0°, +360°] longitude range.
+Warning. Longitude below -180° or above +180° is not a valid coordinate so the map library or parser could throw an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">geodesic</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE6buffer7widthNM8simplify9toleranceSayACGSd_SbSdtF"></a>
+                    <a name="//apple_ref/swift/Method/buffer(widthNM:simplify:tolerance:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE6buffer7widthNM8simplify9toleranceSayACGSd_SbSdtF">buffer(widthNM:<wbr>simplify:<wbr>tolerance:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates a corridor polygon.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">buffer</span><span class="p">(</span><span class="nv">widthNM</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+                   <span class="nv">simplify</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+                   <span class="nv">tolerance</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>widthNM</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The width of corridor in nautical miles.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>simplify</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If the polygon should be simplified. <code>true</code> by default.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tolerance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Controls the level of simplification by specifying the maximum allowed distance between the original line point and the simplified point.
+       A higher tolerance value results in higher simplification. <code>0.1</code> is good for server fetch and <code>0.01</code> is good for drawing on the map.
+       The default is <code>0.1</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE8simplify9toleranceSayACGSd_tF"></a>
+                    <a name="//apple_ref/swift/Method/simplify(tolerance:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE8simplify9toleranceSayACGSd_tF">simplify(tolerance:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Simplifies the polygon.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">simplify</span><span class="p">(</span><span class="nv">tolerance</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tolerance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Controls the level of simplification by specifying the maximum allowed distance between the original line point and the simplified point.
+                   A higher tolerance value results in higher simplification. The default is 0.1.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE12intersection4withSayACGSgAF_tF"></a>
+                    <a name="//apple_ref/swift/Method/intersection(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE12intersection4withSayACGSgAF_tF">intersection(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Finds an intersection between two polygons.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">intersection</span><span class="p">(</span><span class="n">with</span> <span class="nv">polygon</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>polygon</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The polygon to check intersection with.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE8smoothed10iterationsSayACGSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/smoothed(iterations:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa10SkyPathSDKSo22CLLocationCoordinate2DVRszlE8smoothed10iterationsSayACGSi_tF">smoothed(iterations:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Smooth the polygon using the Ramer–Douglas–Peucker algorithm.</p>
+
+<p>Performed on the caller queue and when lot of coordinates it could take some time, so using a background queue is recommended.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">smoothed</span><span class="p">(</span><span class="nv">iterations</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>iterations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Controls the level of smoothness. A higher number results in higher smoothness. The default is 1.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%20%3D%3D%20%60LiveFlight%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element` == `LiveFlight`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%20%3D%3D%20%60LiveFlight%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Element</code> == <code><a href="../Structs/LiveFlight.html">LiveFlight</a></code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa10SkyPathSDKAA10LiveFlightVRszlE7geoJSONSSyF"></a>
+                    <a name="//apple_ref/swift/Method/geoJSON()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa10SkyPathSDKAA10LiveFlightVRszlE7geoJSONSSyF">geoJSON()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts the array of <code><a href="../Structs/LiveFlight.html">LiveFlight</a></code> to a valid GeoJSON that can be visualized on the map. </p>
+
+<p>Can be used when you have a custom filtering of <code><a href="../Structs/LiveFlight.html">LiveFlight</a></code> but need a GeoJSON for the map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">geoJSON</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%20%3D%3D%20%60NowcastItem%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element` == `NowcastItem`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%20%3D%3D%20%60NowcastItem%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Element</code> == <code><a href="../Structs/NowcastItem.html">NowcastItem</a></code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa10SkyPathSDKAA11NowcastItemVRszlE7geoJSONSSyF"></a>
+                    <a name="//apple_ref/swift/Method/geoJSON()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa10SkyPathSDKAA11NowcastItemVRszlE7geoJSONSSyF">geoJSON()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts the array of <code><a href="../Structs/NowcastItem.html">NowcastItem</a></code> to a valid GeoJSON that can be visualized on the map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">geoJSON</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Available%20where%20%60Element%60%20%3D%3D%20%60TurbulenceItem%60"></a>
+                <a name="//apple_ref/swift/Section/Available where `Element` == `TurbulenceItem`" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Available%20where%20%60Element%60%20%3D%3D%20%60TurbulenceItem%60"></a>
+                  <h3 class="section-name"><span>Available where <code>Element</code> == <code><a href="../Structs/TurbulenceItem.html">TurbulenceItem</a></code></span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa10SkyPathSDKAA14TurbulenceItemVRszlE7geoJSON8withTypeSSAA0d6ResultI0O_tF"></a>
+                    <a name="//apple_ref/swift/Method/geoJSON(withType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa10SkyPathSDKAA14TurbulenceItemVRszlE7geoJSON8withTypeSSAA0d6ResultI0O_tF">geoJSON(withType:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Converts the array of <code><a href="../Structs/TurbulenceItem.html">TurbulenceItem</a></code> to a valid GeoJSON that can be visualized on the map. </p>
+
+<p>Can be used when you have a custom filtering of <code><a href="../Structs/TurbulenceItem.html">TurbulenceItem</a></code> but need a GeoJSON for the map.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">geoJSON</span><span class="p">(</span><span class="n">withType</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/TurbulenceResultType.html">TurbulenceResultType</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>type</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The feature geometry of turbulence in GeoJSON can be different for own (circle) and server (hexagon) turbulence.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2024-04-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

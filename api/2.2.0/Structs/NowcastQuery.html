@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NowcastQuery Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/NowcastQuery" class="dashAnchor"></a>
+    <a title="NowcastQuery Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SkyPathSDK 2.2.0 Docs</a> (99% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SkyPathSDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        NowcastQuery Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SPLocalNotificationManager.html">SPLocalNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SkyPath.html">SkyPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceCluster.html">TurbulenceCluster</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer.html">TurbulenceClusterer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TurbulenceClusterer/Options.html">– Options</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AircraftSize.html">AircraftSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertError.html">AlertError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AlertResultType.html">AlertResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataAreaType.html">DataAreaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataHistoryTime.html">DataHistoryTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataUpdateFrequency.html">DataUpdateFrequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GeneralError.html">GeneralError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LoggingLevel.html">LoggingLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NowcastHours.html">NowcastHours</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NowcastSeverity.html">NowcastSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/QueryError.html">QueryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/StartError.html">StartError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceResultType.html">TurbulenceResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceSeverity.html">TurbulenceSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TurbulenceTrend.html">TurbulenceTrend</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:10SkyPathSDK7SPErrorP">SPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SkyPathDelegate.html">SkyPathDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Aircraft.html">Aircraft</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertQuery.html">AlertQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AlertResult.html">AlertResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataQuery.html">DataQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DataTypeOptions.html">DataTypeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Flight.html">Flight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/InjectedLocation.html">InjectedLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/InjectedLocation/Altitude.html">– Altitude</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LiveFlight.html">LiveFlight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LiveFlightQuery.html">LiveFlightQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LiveFlightResult.html">LiveFlightResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LiveFlightResultOptions.html">LiveFlightResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NowcastItem.html">NowcastItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NowcastQuery.html">NowcastQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NowcastResult.html">NowcastResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NowcastResultOptions.html">NowcastResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tile.html">Tile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceItem.html">TurbulenceItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResult.html">TurbulencePolygonsResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulencePolygonsResultOptions.html">TurbulencePolygonsResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceQuery.html">TurbulenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResult.html">TurbulenceResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TurbulenceResultOptions.html">TurbulenceResultOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>NowcastQuery</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NowcastQuery</span></code></pre>
+
+                </div>
+              </div>
+            <p>Use <code>NowcastQuery</code> to get filtered data as an array of <code><a href="../Structs/NowcastItem.html">NowcastItem</a></code> objects or a GeoJSON string.</p>
+
+<p>It will query locally cached data received previously.
+Used in <code><a href="../Classes/SkyPath.html#/s:10SkyPathSDK0aB0C7nowcast4withs6ResultOyAA07NowcastF0VyAA0G4ItemVGAA10QueryErrorOGAA0gI0V_tF">SkyPath.nowcast(with:)</a></code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV5hoursAA0D5HoursOvp"></a>
+                    <a name="//apple_ref/swift/Property/hours" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV5hoursAA0D5HoursOvp">hours</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Forecast hours to return data for.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hours</span><span class="p">:</span> <span class="kt"><a href="../Enums/NowcastHours.html">NowcastHours</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV8altRangeSNySdGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/altRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV8altRangeSNySdGSgvp">altRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An altitude range to query.</p>
+
+<p>Should be round to a thousand feet.
+The default is 0&hellip;52000. Measured in feet.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">altRange</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV13resultOptionsAA0d6ResultG0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/resultOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV13resultOptionsAA0d6ResultG0Vvp">resultOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>How to provide queried data.</p>
+
+<p>The default is <code>geoJSON</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">resultOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/NowcastResultOptions.html">NowcastResultOptions</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV9aggregateSbvp"></a>
+                    <a name="//apple_ref/swift/Property/aggregate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV9aggregateSbvp">aggregate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Aggregate data by the tile to have only one most severe per tile.</p>
+
+<p>The default is <code>true</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">aggregate</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV5tilesShySSGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tiles" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV5tilesShySSGSgvp">tiles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set of tile keys generated by <code><a href="../Structs/Tile.html#/s:10SkyPathSDK4TileV3keySSvp">Tile.key</a></code> or <code><a href="../Structs/Tile.html#/s:10SkyPathSDK4TileV10keyByCoordSSvp">Tile.keyByCoord</a></code>.</p>
+
+<p>Use it to query in the specific tiles.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tiles</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV12excludeTilesShySSGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/excludeTiles" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV12excludeTilesShySSGSgvp">excludeTiles</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set of tile keys generated by <code><a href="../Structs/Tile.html#/s:10SkyPathSDK4TileV3keySSvp">Tile.key</a></code> or <code><a href="../Structs/Tile.html#/s:10SkyPathSDK4TileV10keyByCoordSSvp">Tile.keyByCoord</a></code>.</p>
+
+<p>Used to not include data in the specific tiles.
+Typically to show only Observed or Nowcast data in the same tile.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">excludeTiles</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV4sevsShyAA0D8SeverityOGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sevs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV4sevsShyAA0D8SeverityOGSgvp">sevs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Nowcast severities to query.</p>
+
+<p>When it&rsquo;s <code>nil</code> all will be used. Optional.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sevs</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/NowcastSeverity.html">NowcastSeverity</a></span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV7polygonSaySo22CLLocationCoordinate2DVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/polygon" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV7polygonSaySo22CLLocationCoordinate2DVGSgvp">polygon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Polygon is a geo-fence area to fetch data inside only.</p>
+
+<p>Should be a closed ring. By default, it uses <code><a href="../Structs/DataQuery.html#/s:10SkyPathSDK9DataQueryV7polygonSaySo22CLLocationCoordinate2DVGSgvp">DataQuery.polygon</a></code>. Typically you don&rsquo;t need to set it. Optional.</p>
+
+<p>It is possible to set a custom polygon but the query is made among the locally stored data received by <code><a href="../Structs/DataQuery.html">DataQuery</a></code> configuration.
+So if the polygons are different there could be no data available locally.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">polygon</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV8viewportSaySo22CLLocationCoordinate2DVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/viewport" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV8viewportSaySo22CLLocationCoordinate2DVGSgvp">viewport</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Viewport is a geo-fence area to fetch data inside only.</p>
+
+<p>Should be a closed ring. By default, it uses <code><a href="../Structs/DataQuery.html#/s:10SkyPathSDK9DataQueryV8viewportSaySo22CLLocationCoordinate2DVGSgvp">DataQuery.viewport</a></code>. Typically you don&rsquo;t need to set it. Optional.</p>
+
+<p>It is possible to set a custom viewport but the query is made among the locally stored data received by <code><a href="../Structs/DataQuery.html">DataQuery</a></code> configuration.
+So if the viewports are different there could be no data available locally.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">viewport</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV5hours8altRange13resultOptions9aggregate4sevsAcA0D5HoursO_SNySdGSgAA0d6ResultJ0VSbShyAA0D8SeverityOGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(hours:altRange:resultOptions:aggregate:sevs:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV5hours8altRange13resultOptions9aggregate4sevsAcA0D5HoursO_SNySdGSgAA0d6ResultJ0VSbShyAA0D8SeverityOGSgtcfc">init(hours:<wbr>altRange:<wbr>resultOptions:<wbr>aggregate:<wbr>sevs:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default initializer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">hours</span><span class="p">:</span> <span class="kt"><a href="../Enums/NowcastHours.html">NowcastHours</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">now</span><span class="p">,</span>
+            <span class="nv">altRange</span><span class="p">:</span> <span class="kt">ClosedRange</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+            <span class="nv">resultOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/NowcastResultOptions.html">NowcastResultOptions</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">geoJSON</span><span class="p">,</span>
+            <span class="nv">aggregate</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nv">sevs</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Enums/NowcastSeverity.html">NowcastSeverity</a></span><span class="o">&gt;</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hours</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Enums/NowcastHours.html">NowcastHours</a></code> for available options. The default is <code>now</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>altRange</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>When it&rsquo;s <code>nil</code> all altitudes are used. Measured in feet. Optional.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resultOptions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>See <code><a href="../Structs/NowcastResultOptions.html">NowcastResultOptions</a></code> for available options. The default is <code>geoJSON</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aggregate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Aggregate reports per tile, taking the highest severity. The default is <code>true</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sevs</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Nowcast severities to query. When it&rsquo;s <code>nil</code> all will be used. Optional.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2024-04-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structures  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Structures" class="dashAnchor"></a>
+    <a title="Structures  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">SkyPathSDK 2.2.0 Docs</a> (99% documented)</p>
+        <div class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">SkyPathSDK Reference</a>
+        <img id="carat" src="img/carat.png" alt=""/>
+        Structures  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SPLocalNotificationManager.html">SPLocalNotificationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SkyPath.html">SkyPath</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TurbulenceCluster.html">TurbulenceCluster</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TurbulenceClusterer.html">TurbulenceClusterer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/TurbulenceClusterer/Options.html">– Options</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/AircraftSize.html">AircraftSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/AlertError.html">AlertError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/AlertResultType.html">AlertResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DataAreaType.html">DataAreaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DataHistoryTime.html">DataHistoryTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/DataUpdateFrequency.html">DataUpdateFrequency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/Environment.html">Environment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/GeneralError.html">GeneralError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/LoggingLevel.html">LoggingLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NowcastHours.html">NowcastHours</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/NowcastSeverity.html">NowcastSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/QueryError.html">QueryError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/StartError.html">StartError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TurbulenceResultType.html">TurbulenceResultType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TurbulenceSeverity.html">TurbulenceSeverity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/TurbulenceTrend.html">TurbulenceTrend</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Array.html">Array</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols.html#/s:10SkyPathSDK7SPErrorP">SPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SkyPathDelegate.html">SkyPathDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Aircraft.html">Aircraft</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AlertQuery.html">AlertQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/AlertResult.html">AlertResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DataQuery.html">DataQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/DataTypeOptions.html">DataTypeOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Flight.html">Flight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/InjectedLocation.html">InjectedLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/InjectedLocation/Altitude.html">– Altitude</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LiveFlight.html">LiveFlight</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LiveFlightQuery.html">LiveFlightQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LiveFlightResult.html">LiveFlightResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/LiveFlightResultOptions.html">LiveFlightResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NowcastItem.html">NowcastItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NowcastQuery.html">NowcastQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NowcastResult.html">NowcastResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/NowcastResultOptions.html">NowcastResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Tile.html">Tile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TurbulenceItem.html">TurbulenceItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TurbulencePolygonsResult.html">TurbulencePolygonsResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TurbulencePolygonsResultOptions.html">TurbulencePolygonsResultOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TurbulenceQuery.html">TurbulenceQuery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TurbulenceResult.html">TurbulenceResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/TurbulenceResultOptions.html">TurbulenceResultOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Structures</h1>
+            <p>The following structures are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK15LiveFlightQueryV"></a>
+                    <a name="//apple_ref/swift/Struct/LiveFlightQuery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK15LiveFlightQueryV">LiveFlightQuery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use <code>LiveFlightQuery</code> to get filtered data as an array of <code><a href="Structs/LiveFlight.html">LiveFlight</a></code> objects or a GeoJSON string.</p>
+
+<p>It will query locally cached data received previously.
+Used in <code><a href="Classes/SkyPath.html#/s:10SkyPathSDK0aB0C11liveFlights4withs6ResultOyAA010LiveFlightG0VAA10QueryErrorOGAA0hiJ0V_tF">SkyPath.liveFlights(with:)</a></code>.</p>
+
+                        <a href="Structs/LiveFlightQuery.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LiveFlightQuery</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK16LiveFlightResultV"></a>
+                    <a name="//apple_ref/swift/Struct/LiveFlightResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK16LiveFlightResultV">LiveFlightResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A result of query live flights using <code><a href="Structs/LiveFlightQuery.html">LiveFlightQuery</a></code>.</p>
+
+<p>Specified in <code><a href="Structs/LiveFlightQuery.html#/s:10SkyPathSDK15LiveFlightQueryV13resultOptionsAA0de6ResultH0Vvp">LiveFlightQuery.resultOptions</a></code>.</p>
+
+                        <a href="Structs/LiveFlightResult.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LiveFlightResult</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK23LiveFlightResultOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/LiveFlightResultOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK23LiveFlightResultOptionsV">LiveFlightResultOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Controls how to receive a queried items result.</p>
+
+                        <a href="Structs/LiveFlightResultOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LiveFlightResultOptions</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK12NowcastQueryV"></a>
+                    <a name="//apple_ref/swift/Struct/NowcastQuery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK12NowcastQueryV">NowcastQuery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use <code>NowcastQuery</code> to get filtered data as an array of <code><a href="Structs/NowcastItem.html">NowcastItem</a></code> objects or a GeoJSON string.</p>
+
+<p>It will query locally cached data received previously.
+Used in <code><a href="Classes/SkyPath.html#/s:10SkyPathSDK0aB0C7nowcast4withs6ResultOyAA07NowcastF0VyAA0G4ItemVGAA10QueryErrorOGAA0gI0V_tF">SkyPath.nowcast(with:)</a></code>.</p>
+
+                        <a href="Structs/NowcastQuery.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NowcastQuery</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK13NowcastResultV"></a>
+                    <a name="//apple_ref/swift/Struct/NowcastResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK13NowcastResultV">NowcastResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A result of query data using <code><a href="Structs/NowcastQuery.html">NowcastQuery</a></code>. </p>
+
+<p>Specified in <code><a href="Structs/NowcastQuery.html#/s:10SkyPathSDK12NowcastQueryV13resultOptionsAA0d6ResultG0Vvp">NowcastQuery.resultOptions</a></code>.</p>
+
+                        <a href="Structs/NowcastResult.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NowcastResult</span><span class="o">&lt;</span><span class="kt">Item</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Item</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">Item</span> <span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK20NowcastResultOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/NowcastResultOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK20NowcastResultOptionsV">NowcastResultOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Controls how to receive a queried data result using <code><a href="Structs/NowcastQuery.html">NowcastQuery</a></code>.</p>
+
+                        <a href="Structs/NowcastResultOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NowcastResultOptions</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK23TurbulencePolygonsQueryV"></a>
+                    <a name="//apple_ref/swift/Struct/TurbulencePolygonsQuery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK23TurbulencePolygonsQueryV">TurbulencePolygonsQuery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use <code>TurbulencePolygonsQuery</code> to get filtered data as a GeoJSON string. </p>
+
+<p>It will query locally cached data received previously.
+Used in <code><a href="Classes/SkyPath.html#/s:10SkyPathSDK0aB0C18turbulencePolygons4withs6ResultOyAA010TurbulenceeG0VAA10QueryErrorOGAA0heI0V_tF">SkyPath.turbulencePolygons(with:)</a></code>.</p>
+
+                        <a href="Structs/TurbulencePolygonsQuery.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TurbulencePolygonsQuery</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK24TurbulencePolygonsResultV"></a>
+                    <a name="//apple_ref/swift/Struct/TurbulencePolygonsResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK24TurbulencePolygonsResultV">TurbulencePolygonsResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A result of query turbulence polygons using <code><a href="Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a></code>. </p>
+
+<p>Specified in <code><a href="Structs/TurbulencePolygonsQuery.html#/s:10SkyPathSDK23TurbulencePolygonsQueryV13resultOptionsAA0de6ResultH0Vvp">TurbulencePolygonsQuery.resultOptions</a></code>.</p>
+
+                        <a href="Structs/TurbulencePolygonsResult.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TurbulencePolygonsResult</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK31TurbulencePolygonsResultOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/TurbulencePolygonsResultOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK31TurbulencePolygonsResultOptionsV">TurbulencePolygonsResultOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Controls how to receive a queried turbulence result using <code><a href="Structs/TurbulencePolygonsQuery.html">TurbulencePolygonsQuery</a></code>.</p>
+
+                        <a href="Structs/TurbulencePolygonsResultOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TurbulencePolygonsResultOptions</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK15TurbulenceQueryV"></a>
+                    <a name="//apple_ref/swift/Struct/TurbulenceQuery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK15TurbulenceQueryV">TurbulenceQuery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use <code>TurbulenceQuery</code> to get filtered data as an array of <code><a href="Structs/TurbulenceItem.html">TurbulenceItem</a></code> objects or a GeoJSON string. </p>
+
+<p>It will query locally cached data received previously.
+Used in <code><a href="Classes/SkyPath.html#/s:10SkyPathSDK0aB0C10turbulence4withs6ResultOyAA010TurbulenceF0VAA10QueryErrorOGAA0gH0V_tF">SkyPath.turbulence(with:)</a></code>.</p>
+
+                        <a href="Structs/TurbulenceQuery.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TurbulenceQuery</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK16TurbulenceResultV"></a>
+                    <a name="//apple_ref/swift/Struct/TurbulenceResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK16TurbulenceResultV">TurbulenceResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A result of query turbulence using <code><a href="Structs/TurbulenceQuery.html">TurbulenceQuery</a></code>. </p>
+
+<p>Specified in <code><a href="Structs/TurbulenceQuery.html#/s:10SkyPathSDK15TurbulenceQueryV13resultOptionsAA0d6ResultG0Vvp">TurbulenceQuery.resultOptions</a></code>.</p>
+
+                        <a href="Structs/TurbulenceResult.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TurbulenceResult</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK23TurbulenceResultOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/TurbulenceResultOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK23TurbulenceResultOptionsV">TurbulenceResultOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Controls how to receive a queried turbulence result using <code><a href="Structs/TurbulenceQuery.html">TurbulenceQuery</a></code>.</p>
+
+                        <a href="Structs/TurbulenceResultOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TurbulenceResultOptions</span> <span class="p">:</span> <span class="kt">OptionSet</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK8AircraftV"></a>
+                    <a name="//apple_ref/swift/Struct/Aircraft" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK8AircraftV">Aircraft</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A supported by SkyPath aircraft data.</p>
+
+                        <a href="Structs/Aircraft.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Aircraft</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10AlertQueryV"></a>
+                    <a name="//apple_ref/swift/Struct/AlertQuery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10AlertQueryV">AlertQuery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Control how to search alerts.</p>
+
+<p>By default, it uses the current location and beam mode with default values.
+When passing <code>route</code> the search will be done in coordinates instead.</p>
+
+<p>By default, the current location altitude will be used to make a range with +/- 2k feet.
+Set <code>altRange</code> when you need the custom range to search for alerts.</p>
+
+                        <a href="Structs/AlertQuery.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AlertQuery</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK11AlertResultV"></a>
+                    <a name="//apple_ref/swift/Struct/AlertResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK11AlertResultV">AlertResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result object with found alerts based on <code><a href="Structs/AlertQuery.html">AlertQuery</a></code> configuration. </p>
+
+<p>It will always have at least one item in the <code>turbulence</code> array.</p>
+
+                        <a href="Structs/AlertResult.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AlertResult</span> <span class="p">:</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK9DataQueryV"></a>
+                    <a name="//apple_ref/swift/Struct/DataQuery" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK9DataQueryV">DataQuery</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>At first request, the whole data according to <code><a href="Classes/SkyPath.html#/s:10SkyPathSDK0aB0C9dataQueryAA04DataE0Vvp">SkyPath.dataQuery</a></code> is fetched.</p>
+
+<p>Then only the new data that appeared (delta) is fetched to save network traffic.
+When cached data expires or a delta can&rsquo;t be received, the whole fresh data will be received again.</p>
+
+<p>There are thousands of turbulence reports around the globe.
+To reduce network traffic usage and keep only data that is currently needed the data fetch is separated into the different types
+controlled by the <code><a href="Classes/SkyPath.html#/s:10SkyPathSDK0aB0C9dataQueryAA04DataE0Vvp">SkyPath.dataQuery</a></code> object that is set initially to default values and can be updated at any time.</p>
+
+<p>All of the below are optional to set but recommended due to your specific flow.</p>
+
+<p>After updating <code><a href="Classes/SkyPath.html#/s:10SkyPathSDK0aB0C9dataQueryAA04DataE0Vvp">SkyPath.dataQuery</a></code> in any way, the check, if need to fetch new data, will be made.
+And if the change requires a new server fetch, the server request will be made immediately.
+No need to call <code>SkyPath.fetchData(refresh:)</code>.</p>
+
+<p>You can update data query at any time and in both ways by setting a property only or a whole object.</p>
+<pre class="highlight swift"><code><span class="kt">SkyPath</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">dataQuery</span><span class="o">.</span><span class="n">polygon</span> <span class="o">=</span> <span class="n">polygon</span>
+<span class="kt">SkyPath</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="n">dataQuery</span> <span class="o">=</span> <span class="kt">DataQuery</span><span class="p">(</span><span class="nv">polygon</span><span class="p">:</span> <span class="n">polygon</span><span class="p">)</span>
+</code></pre>
+
+                        <a href="Structs/DataQuery.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataQuery</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK15DataTypeOptionsV"></a>
+                    <a name="//apple_ref/swift/Struct/DataTypeOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK15DataTypeOptionsV">DataTypeOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SkyPath data types available to be fetched from the server.</p>
+
+<p>Only specified type in <code><a href="Structs/DataQuery.html#/s:10SkyPathSDK9DataQueryV5typesAA0D11TypeOptionsVvp">DataQuery.types</a></code> will be fetched and stored locally.</p>
+
+                        <a href="Structs/DataTypeOptions.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DataTypeOptions</span> <span class="p">:</span> <span class="kt">OptionSet</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK6FlightV"></a>
+                    <a name="//apple_ref/swift/Struct/Flight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK6FlightV">Flight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tracked data is aggregated and anonymized.</p>
+
+<p>To group tracked data it&rsquo;s attached to a corresponding flight.
+The set flight object is stored locally until removed.</p>
+
+                        <a href="Structs/Flight.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Flight</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK16InjectedLocationV"></a>
+                    <a name="//apple_ref/swift/Struct/InjectedLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK16InjectedLocationV">InjectedLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>External injected location for SDK to use when the device&rsquo;s location is not available.</p>
+
+                        <a href="Structs/InjectedLocation.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">InjectedLocation</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK10LiveFlightV"></a>
+                    <a name="//apple_ref/swift/Struct/LiveFlight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK10LiveFlightV">LiveFlight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The live flight object.</p>
+
+                        <a href="Structs/LiveFlight.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LiveFlight</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">LiveFlight</span><span class="p">:</span> <span class="kt">PolygonFilterable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK11NowcastItemV"></a>
+                    <a name="//apple_ref/swift/Struct/NowcastItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK11NowcastItemV">NowcastItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The nowcast data object.</p>
+
+                        <a href="Structs/NowcastItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">NowcastItem</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK4TileV"></a>
+                    <a name="//apple_ref/swift/Struct/Tile" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK4TileV">Tile</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code>Tile</code> is a representation of a turbulence report&rsquo;s H3 index area within a corresponding altitude box.</p>
+
+<p>SkyPath divides the world into 10x10 miles x 1000 feet high logical rectangular boxes, which were found to be the best balance; 
+not to overload the pilots with information, but give enough granularity for the pilots to be able to take action and avoid CAT consequences.</p>
+
+<p>SkyPath uses <a href="https://h3geo.org">H3</a> hexagonal hierarchical geospatial indexing system.
+H3 resolution 5 is used to represent turbulence area by hexagons of different severity levels.</p>
+
+<p>SDK handles all work with H3 indexes out of the box so you don&rsquo;t need to do anything for it on your side.</p>
+
+                        <a href="Structs/Tile.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tile</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SkyPathSDK14TurbulenceItemV"></a>
+                    <a name="//apple_ref/swift/Struct/TurbulenceItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SkyPathSDK14TurbulenceItemV">TurbulenceItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The turbulence data object.</p>
+
+                        <a href="Structs/TurbulenceItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TurbulenceItem</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2024 <a class="link" href="https://skypath.io" target="_blank" rel="external noopener">SkyPath LTD</a>. All rights reserved. (Last updated: 2024-04-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
